@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\TripController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -64,4 +65,16 @@ Route::controller(TicketController::class)->group(function(){
     Route::get('/tickets/{id}/edit', 'edit')->name('tickets.edit');
     Route::put('/tickets/{id}', 'update')->name('tickets.update');
     Route::delete('/tickets/{id}', 'destroy')->name('tickets.destroy');
+});
+
+// Bus Routes
+
+Route::controller(UserController::class)->group(function(){
+    Route::get('/users', 'index')->name('users.index');
+    Route::get('/users/create', 'create')->name('users.create');
+    Route::post('/users', 'store')->name('users.store');
+    Route::get('/users/{id}', 'show')->name('users.show');
+    Route::get('/users/{id}/edit', 'edit')->name('users.edit');
+    Route::put('/users/{id}', 'update')->name('users.update');
+    Route::delete('/users/{id}', 'destroy')->name('users.destroy');
 });
