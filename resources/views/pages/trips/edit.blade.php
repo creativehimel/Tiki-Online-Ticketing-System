@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title', 'Edit Trip')
 @section('content')
     <div class="row">
         <div class="col-md mb-4 mb-md-0">

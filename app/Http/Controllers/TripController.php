@@ -12,13 +12,13 @@ class TripController extends Controller
     public function index()
     {
         $trips = Trip::all();
-        return view('pages.trips.index', compact($trips));
+        return view('pages.trips.index', compact('trips'));
     }
     public function create()
     {
         $locations = Location::all();
         $buses = Bus::all();
-        return view('pages.trips.create', compact($locations, $buses));
+        return view('pages.trips.create', compact('locations', 'buses'));
     }
     public function store(Request $request)
     {
@@ -44,7 +44,7 @@ class TripController extends Controller
     public function edit(string $id)
     {
         $trip = Trip::find($id);
-        return view('pages.trip.edit', compact($trip));
+        return view('pages.trip.edit', compact('trip'));
     }
     public function update(Request $request, string $id)
     {
