@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Location extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['name', 'price'];
+
+
+    public function tickets()
+    {
+        return $this->hasMany(Ticket::class);
+    }
 }
