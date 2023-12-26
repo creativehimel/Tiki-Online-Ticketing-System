@@ -3,9 +3,9 @@
 @section('content')
 
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
-                <h4 class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <h4 class="card-header d-flex justify-content-between align-items-center">
                     Create A Trip
                     <a href="{{ route('trips.index') }}" class="btn btn-warning">Back</a>
                 </h4>

@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <h4 class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <h4 class="card-header d-flex justify-content-between align-items-center">
                     User Management
                     <a href="{{ route('users.create') }}" class="btn btn-success">Add User</a>
                 </h4>

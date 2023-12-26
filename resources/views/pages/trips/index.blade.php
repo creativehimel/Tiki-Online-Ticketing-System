@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <h4 class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <h4 class="card-header d-flex justify-content-between align-items-center">
                     Trips
                     <a href="{{ route('trips.create') }}" class="btn btn-success">Create New Trip</a>
                 </h4>
@@ -17,7 +17,7 @@
                     @endif
 
                     @if ($trips->isEmpty())
-                        <p>No trips available.</p>
+                        <p class="text-center">No trips available.</p>
                     @else
                         <table class="table">
                             <thead>

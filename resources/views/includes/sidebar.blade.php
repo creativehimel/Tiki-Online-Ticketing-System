@@ -49,90 +49,89 @@
 
             <!-- Apps & Pages -->
             <li class="menu-header small text-uppercase">
-              <span class="menu-header-text">Product Module</span>
+              <span class="menu-header-text">Bus Module</span>
             </li>
-            <!-- Product menu start -->
+            <!-- Bus Route menu start -->
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons ti ti-shopping-bag"></i>
-                Products
+                <i class="menu-icon tf-icons ti ti-map-2"></i>
+                Bus Route
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="#" class="menu-link">
-                    All Products
+                  <a href="{{route('locations.index')}}" class="menu-link">
+                    All Routes
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="#" class="menu-link">
-                    Create Product
+                  <a href="{{route('locations.create')}}" class="menu-link">
+                    Create Route
                   </a>
                 </li>
               </ul>
             </li>
-            <!-- Product menu end -->
-              <!-- Brand menu start -->
+            <!-- Bus Route menu end -->
+              <!-- Bus Name menu start -->
               <li class="menu-item">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
-                      <i class="menu-icon tf-icons ti ti-brand-adobe"></i>
-                      Brands
+                      <i class="menu-icon tf-icons ti ti-bus"></i>
+                      Bus Name
                   </a>
                   <ul class="menu-sub">
                       <li class="menu-item">
-                          <a href="#" class="menu-link">
-                              All Brands
+                          <a href="{{route('buses.index')}}" class="menu-link">
+                              All Buses
                           </a>
                       </li>
                       <li class="menu-item">
-                          <a href="#" class="menu-link">
-                              Create Brand
+                          <a href="{{route('buses.create')}}" class="menu-link">
+                              Create Bus Name
                           </a>
                       </li>
                   </ul>
               </li>
-              <!-- Brand menu end -->
+              <!-- Bus Name menu end -->
               <!-- Category menu start -->
               <li class="menu-item">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
-                      <i class="menu-icon tf-icons ti ti-category"></i>
-                      Categories
+                      <i class="menu-icon tf-icons ti ti-chart-dots-3"></i>
+                      Bus Trip
                   </a>
                   <ul class="menu-sub">
                       <li class="menu-item">
-                          <a href="#" class="menu-link">
-                              All Categories
+                          <a href="{{route('trips.index')}}" class="menu-link">
+                              All Bus Trips
                           </a>
                       </li>
                       <li class="menu-item">
-                          <a href="#" class="menu-link">
-                              Create Category
+                          <a href="{{route('trips.create')}}" class="menu-link">
+                              Create Bus Trip
                           </a>
                       </li>
                   </ul>
               </li>
-              <!-- Category menu end -->
-              <li class="menu-header small text-uppercase">
-                  <span class="menu-header-text">Sales Module</span>
-              </li>
-              <!-- Customer menu start -->
+
+              <!-- Customer menu end -->
+              <!-- Category menu start -->
               <li class="menu-item">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
-                      <i class="menu-icon tf-icons ti ti-heart-rate-monitor"></i>
-                      Sales
+                      <i class="menu-icon tf-icons ti ti-ticket"></i>
+                      Bus Ticket
                   </a>
                   <ul class="menu-sub">
                       <li class="menu-item">
-                          <a href="#" class="menu-link">
-                              All Sales
+                          <a href="{{route('tickets.index')}}" class="menu-link">
+                              All Bus Tickets
                           </a>
                       </li>
                       <li class="menu-item">
-                          <a href="#" class="menu-link">
-                              Create Sale
+                          <a href="{{route('tickets.create')}}" class="menu-link">
+                              Create Bus Ticket
                           </a>
                       </li>
                   </ul>
               </li>
+
               <!-- Customer menu end -->
               <li class="menu-header small text-uppercase">
                   <span class="menu-header-text">Customer Module</span>
@@ -145,12 +144,12 @@
                   </a>
                   <ul class="menu-sub">
                       <li class="menu-item">
-                          <a href="#" class="menu-link">
+                          <a href="{{route('users.index')}}" class="menu-link">
                               All Customers
                           </a>
                       </li>
                       <li class="menu-item">
-                          <a href="#" class="menu-link">
+                          <a href="{{route('users.create')}}" class="menu-link">
                               Create Customer
                           </a>
                       </li>
