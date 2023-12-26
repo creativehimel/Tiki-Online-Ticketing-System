@@ -15,7 +15,9 @@
                             {{ session('success') }}
                         </div>
                     @endif
-
+                    @if($locations->isEmpty())
+                            <p class="text-center">No bus route available.</p>
+                        @else
                     <table class="table">
                         <thead>
                         <tr>
@@ -46,6 +48,7 @@
                         @endforeach
                         </tbody>
                     </table>
+                        @endif
                 </div>
             </div>
         </div>

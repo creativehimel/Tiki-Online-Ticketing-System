@@ -15,7 +15,9 @@
                             {{ session('success') }}
                         </div>
                     @endif
-
+                        @if ($buses->isEmpty())
+                            <p class="text-center">No buses available.</p>
+                        @else
                     <table class="table">
                         <thead>
                         <tr>
@@ -68,6 +70,7 @@
                         @endforeach
                         </tbody>
                     </table>
+                        @endif
                 </div>
             </div>
         </div>
