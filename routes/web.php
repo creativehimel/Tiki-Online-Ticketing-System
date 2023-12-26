@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BusController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\TripController;
@@ -38,4 +39,16 @@ Route::controller(LocationController::class)->group(function(){
     Route::get('/locations/{id}/edit', 'edit')->name('locations.edit');
     Route::put('/locations/{id}', 'update')->name('locations.update');
     Route::delete('/locations/{id}', 'destroy')->name('locations.destroy');
+});
+
+// Bus Routes
+
+Route::controller(BusController::class)->group(function(){
+    Route::get('/buses', 'index')->name('buses.index');
+    Route::get('/buses/create', 'create')->name('buses.create');
+    Route::post('/buses', 'store')->name('buses.store');
+    Route::get('/buses/{id}', 'show')->name('buses.show');
+    Route::get('/buses/{id}/edit', 'edit')->name('buses.edit');
+    Route::put('/buses/{id}', 'update')->name('buses.update');
+    Route::delete('/buses/{id}', 'destroy')->name('buses.destroy');
 });
